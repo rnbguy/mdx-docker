@@ -1,4 +1,6 @@
-FROM ocaml/opam
+FROM archlinux:base-devel
 
-RUN opam update
-RUN opam install mdx
+RUN pacman -Syu --noconfirm opam
+RUN opam init -y
+RUN opam install mdx -y
+RUN opam env >> ~/.bashrc
