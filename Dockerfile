@@ -1,6 +1,6 @@
 # https://github.com/nektos/act#runners
 
-FROM ocaml/opam:ubuntu-22.10
+FROM ocaml/opam:ubuntu-23.04
 
 USER root
 
